@@ -1,24 +1,21 @@
-# test-of-fibonacci-queue
+# C++ with database
 
-based on https://github.com/beniz/fiboheap
-it looks findNode function fails.
+## ubuntu
 
-# This one just provide test code.
+user@deepin:~/lib$ sudo apt list --installed | grep postgre
 
-We have fibonacci-queue stored under old
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
-# CMake learning
+postgresql-11/未知,now 11.9-0+deb10u1+rebuild amd64 [已安装，自动]
+postgresql-client-11/未知,now 11.9-0+deb10u1+rebuild amd64 [已安装，自动]
+postgresql-client-common/未知,未知,now 200+deb10u4+rebuild all [已安装，自动]
+postgresql-client/未知,未知,now 11+200+deb10u4+rebuild all [已安装]
+postgresql-common/未知,未知,now 200+deb10u4+rebuild all [已安装，自动]
+user@deepin:~/lib$ sudo apt list --installed | grep libpq
 
-From http://derekmolloy.ie/hello-world-introductions-to-cmake/
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
-# cmake1
-Just one C++ program file along with CMake configuration. We can run cmake . and then make
+libpq-dev/未知,now 11.9-0+deb10u1+rebuild amd64 [已安装]
+libpq5/未知,now 11.9-0+deb10u1+rebuild amd64 [已安装，自动]
 
-# cmake2
-With sub folders include, src. The folder src with all .cpp files. The folder include with .h file.
-
-# cmake3
-Library project.
-
-# cmake5
-Project using compiled library.
+Refer CMakeLists.txt and src/main.cpp

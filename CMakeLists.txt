@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 2.8.9)
-project(directory_test)
+project(database_test)
+
+# use libpq to connect to postgresql database
+set ( PROJECT_LINK_LIBS libpq.so )
+link_directories( /usr/lib/x86_64-linux-gnu )
 
 #Bring the headers, such as Student.h into the project
 include_directories(include)
@@ -10,4 +14,7 @@ include_directories(include)
 #However, the file(GLOB...) allows for wildcard additions:
 file(GLOB SOURCES "src/*.cpp")
 
-add_executable(testStudent.exe ${SOURCES})
+add_executable(dbtest.exe ${SOURCES})
+
+# add lib above for connection to postgresql
+target_link_libraries(dbtest.exe ${PROJECT_LINK_LIBS} )

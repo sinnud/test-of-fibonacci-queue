@@ -1,7 +1,7 @@
 # C++ with database
 
 ## ubuntu
-
+<pre>
 user@deepin:~/lib$ sudo apt list --installed | grep postgre
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
@@ -17,5 +17,5 @@ WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 libpq-dev/未知,now 11.9-0+deb10u1+rebuild amd64 [已安装]
 libpq5/未知,now 11.9-0+deb10u1+rebuild amd64 [已安装，自动]
-
+</pre>
 Refer CMakeLists.txt and src/main.cpp

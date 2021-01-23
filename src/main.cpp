@@ -33,3 +33,15 @@ int main(int argc, char *argv[]){
    PQfinish(conn);
    return 0;
 }
+/**
+ * A simple function that adds.
+ *
+ * @param a: The initial value
+ * @param b: The value to add to `a`
+ *
+ * @returns The sum of `a` and `b`.
+ *
+ */
+int my_adding_function(int a, int b) {
+    return a + b;
+    }

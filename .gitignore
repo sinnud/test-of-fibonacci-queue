@@ -1,6 +1,11 @@
 #VSCode
 .vscode
 
+# auto doc
+docs/build
+docs/make.bat 
+docs/Makefile
+
 ##### Windows
 # Windows thumbnail cache files
 Thumbs.db
